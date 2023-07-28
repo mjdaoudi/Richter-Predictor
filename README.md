@@ -18,13 +18,17 @@ The project has been implement in R using R notebooks. It features some data exp
 
 A feature relevance metric has also been computed once the best model has been chosen according to the entropy. The following equations details the computation:
 
+```math
 \begin{equation*}
 R_i = H(y|X^{-i}) - H(y|X)
 \end{equation*}
+```
 
 where the $H(y|X)$ is the entropy of a multi class random variable given by :
+
+```math
 \begin{equation*}
 H(y|X) = \dfrac{1}{N}\sum_{i=1}^{N} \sum_{j=1}^{M}p(y_{ij}|x_{i}) \times log_2(p(y_{ij}|x_{i}))
 \end{equation*}
-
+```
 <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
